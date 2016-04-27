@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.translatable {
+    color: rgba(0, 150, 255, 1);
+}

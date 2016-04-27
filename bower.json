@@ -1,0 +1,23 @@
+{
+  "name": "angular-onthefly-translation",
+  "description": "Angular on-the-fly translation administration utility",
+  "main": "index.js",
+  "authors": [
+    "Antoine Colmard <a.colmard@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-translate": "^2.11.0",
+    "angular-translate-loader-static-files": "^2.11.0",
+    "angular-sanitize": "^1.5.5",
+    "jquery": "^2.2.3"
+  }
+}
