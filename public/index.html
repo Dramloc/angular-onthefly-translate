@@ -6,12 +6,7 @@
     <link type="text/css" rel="stylesheet" href="assets/stylesheets/style.css" />
 </head>
 
-<body ng-controller="TranslationsController as translationsController">
-
-    <select ng-change="translationsController.refresh()" ng-model="translationsController.locale">
-        <option ng-repeat="locale in translationsController.locales" value="{{locale}}">{{locale}}</option>
-    </select>
-
+<body>
     <div>
         <p translate="hello"></p>
         <p translate="translate"></p>

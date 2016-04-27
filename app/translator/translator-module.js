@@ -1,17 +1,9 @@
-angular.module('app.translations')
-    .controller('TranslationsController', TranslationsController);
+angular.module('app.translator', [
+    'app.translations'
+]).run(run);
 
 /** @ngInject */
-function TranslationsController($translate, $http) {
-    var vm = this;
-    vm.locale = $translate.resolveClientLocale();
-    vm.locales = [
-        'fr-FR',
-        'en'
-    ];
-
-    vm.refresh = refresh;
-
+function run($translate, $http) {
     initialize();
 
     function initialize() {
@@ -42,19 +34,15 @@ function TranslationsController($translate, $http) {
 
                 $http({
                     method: 'PUT',
-                    url: '/i18n/' + vm.locale,
+                    url: '/i18n/' + $translate.resolveClientLocale(),
                     data: {
                         key: element.attr('translate'),
                         value: element.text()
                     }
                 }).then(function (response) {
-                    $translate.refresh(vm.locale);
+                    $translate.refresh($translate.resolveClientLocale());
                 });
             });
         });
-    }
-
-    function refresh() {
-        $translate.use(vm.locale);
     }
 }

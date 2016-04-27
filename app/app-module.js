@@ -1,3 +1,4 @@
 angular.module('app', [
-    'app.translations'
+    'app.translations',
+    'app.translator'
 ]);
