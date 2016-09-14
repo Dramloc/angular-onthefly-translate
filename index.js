@@ -31,7 +31,7 @@ function loadJSON(path, callback) {
 }
 
 /**
- * Get translations for guven locale.
+ * Get translations for given locale.
  */
 app.get('/i18n/:locale', (req, res) => {
     let locale = req.params.locale;
