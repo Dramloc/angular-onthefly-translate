@@ -1,7 +1,7 @@
 angular.module('otf-translate')
   .factory('$otfInterpolator', $otfInterpolator)
 
-// @ngInject
+/* @ngInject */
 function $otfInterpolator() {
   return {
     setLocale: function (locale) {
