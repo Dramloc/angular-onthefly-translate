@@ -1,8 +1,12 @@
 {
-  "name": "angular-onthefly-translation",
+  "name": "angular-onthefly-translate",
   "version": "1.0.0",
-  "description": "Angular on-the-fly translation administration utility",
-  "main": "index.js",
+  "description": "Angular on-the-fly translation module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dramloc/angular-onthefly-translate.git"
+  },
+  "main": "www/index.js",
   "scripts": {
     "start": "node www/index.js",
     "postinstall": "bower install"
